@@ -32,7 +32,7 @@ mod tests {
 
     #[test]
     fn test_construct_github_profile_url_with_repo_url() {
-        let fake_query = "facebook";
+        let fake_query = "gh facebook";
         assert_eq!(
             construct_github_url(fake_query),
             "https://github.com/facebook"
