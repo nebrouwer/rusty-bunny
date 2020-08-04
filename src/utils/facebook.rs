@@ -12,11 +12,7 @@ pub fn construct_facebook_url(query: &str) -> String {
 
         facebook_dotcom.to_string()
 
-        //Check if it looks like a Facebook profile
-    }//else if &query[..4] == "tw @" {
-     //   construct_facebook_profile_url(&query[4..])
-    //}
-    else{
+    }else {
         //Assume the other match is "fb sometext"
         //and search on Facebook
         construct_facebook_search_url(&query[3..])
