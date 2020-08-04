@@ -22,6 +22,7 @@ fn search(cmd: String) -> Redirect {
 		"fb" => utils::facebook::construct_facebook_url(&cmd),
 		"yt" => utils::youtube::construct_youtube_url(&cmd),
 		"am" => utils::amazon::construct_amazon_url(&cmd),
+		"pin" => utils::pinterest::construct_pinterest_url(&cmd),
 		_ => utils::google::construct_google_search_url(&cmd)
 	};
 	
